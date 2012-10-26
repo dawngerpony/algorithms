@@ -28,4 +28,6 @@ if __name__ == "__main__":
 	print stack.pop()
 	print stack.pop()
 	print stack.pop()
+
+	# This last one generates an error.
 	print stack.pop()
