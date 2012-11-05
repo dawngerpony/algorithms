@@ -1,19 +1,21 @@
 // Bag.java
 import java.util.Iterator;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Bag<Item> implements Iterable<Item> {
 
-	private Item items = null;
-	private int index = 0;
+	private List<Item> items = null;
+	private int size = 0;
 
 	// Constructor
 	public Bag() {
-		this.items = new Item[10];
-		//@TODO Complete this method.
+		this.items = new ArrayList<Item>();
 	}
 
 	public void add(Item item) {
-
+		this.items.add(item);
+		this.size++;
 	}
 
 	public boolean isEmpty() {
@@ -21,7 +23,7 @@ public class Bag<Item> implements Iterable<Item> {
 	}
 
 	public int size() {
-		return 0;
+		return this.size;
 	}
 
 	public Iterator iterator() {
@@ -29,21 +31,42 @@ public class Bag<Item> implements Iterable<Item> {
 	}
 
 	private class BagIterator implements Iterator {
+
+		private int i = 0;
+
 		public boolean hasNext() {
-			return false;
+			if(i >= size) {
+				return false;
+			} else {
+				return true;
+			}
 		}
 
 		public Item next() {
-
+			Item next = items.get(i);
+			if(next != null) {
+				i++;
+				return next;
+			} else {
+				return null;
+			}
 		}
 
 		public void remove() {
-
+			// this.items.remove(this.index);
 		} 
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Hello!");
+		Bag<Banana> bag = new Bag<Banana>();
+		Banana first = new Banana("foo");
+		Banana second = new Banana("bar");
+		bag.add(first);
+		bag.add(second);
+
+		for(Banana i : bag) {
+			System.out.println(i.value);
+		}
 	}
 }
 
