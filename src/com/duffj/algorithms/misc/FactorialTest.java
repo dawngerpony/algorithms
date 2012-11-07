@@ -9,6 +9,7 @@ public class FactorialTest {
 
 	@Test
 	public void testFactorialSuccess() {
+		
 		Factorial f = new Factorial();
 
 //		Assert.assertEquals(f.factorial(-1), null);
