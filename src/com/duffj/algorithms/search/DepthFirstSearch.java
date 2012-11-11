@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.duffj.search;
+package com.duffj.algorithms.search;
 
 /**
  * @author dafydd
