@@ -3,29 +3,28 @@
 
 
 class Stack:
+    collection = []
 
-	collection = []
+    def push(self, el):
+        self.collection.append(el)
 
-	def push(self, el):
-		self.collection.append(el)
-
-	def pop(self):
-		return self.collection.pop()
+    def pop(self):
+        return self.collection.pop()
 
 
 if __name__ == "__main__":
-	items = ["red", "blue", "green"]
+    items = ["red", "blue", "green"]
 
-	stack = Stack()
+    stack = Stack()
 
-	for item in items:
-		stack.push(item)
+    for item in items:
+        stack.push(item)
 
-	print(stack.pop())
-	print(stack.pop())
-	print(stack.pop())
+    print(stack.pop())
+    print(stack.pop())
+    print(stack.pop())
 
-	try:
-		print(stack.pop())
-	except IndexError as err:
-		print(f"Error: {err}")
+    try:
+        print(stack.pop())
+    except IndexError as err:
+        print(f"Error: {err}")
