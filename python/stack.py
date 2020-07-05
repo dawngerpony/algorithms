@@ -1,33 +1,31 @@
-# stack.py
+""" A (very lazy) implementation of a stack in Python 3.
+"""
 
-# An implementation of a stack.
-# A little lazy because it uses Python lists under the hood,
-# but it's a start. I should really do this in C instead.
 
 class Stack:
 
-	items = []
+	collection = []
 
-	def push(self, item):
-		self.items.append(item)
+	def push(self, el):
+		self.collection.append(el)
 
 	def pop(self):
-		return self.items.pop()
+		return self.collection.pop()
+
 
 if __name__ == "__main__":
-	item1 = "red"
-	item2 = "blue"
-	item3 = "green"
+	items = ["red", "blue", "green"]
 
 	stack = Stack()
 
-	stack.push(item1)
-	stack.push(item2)
-	stack.push(item3)
+	for item in items:
+		stack.push(item)
 
-	print stack.pop()
-	print stack.pop()
-	print stack.pop()
+	print(stack.pop())
+	print(stack.pop())
+	print(stack.pop())
 
-	# This last one generates an error.
-	print stack.pop()
+	try:
+		print(stack.pop())
+	except IndexError as err:
+		print(f"Error: {err}")
