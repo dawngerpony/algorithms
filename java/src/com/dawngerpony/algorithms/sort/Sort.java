@@ -1,4 +1,4 @@
-package com.duffj.algorithms.sort;
+package com.dawngerpony.algorithms.sort;
 
 public abstract class Sort {
 

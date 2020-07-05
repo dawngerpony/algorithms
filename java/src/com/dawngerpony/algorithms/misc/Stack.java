@@ -1,4 +1,4 @@
-package com.duffj.algorithms.misc;
+package com.dawngerpony.algorithms.misc;
 
 /**
  * Implementation of a stack using arrays.

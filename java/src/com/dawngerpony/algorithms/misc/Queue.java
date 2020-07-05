@@ -1,4 +1,4 @@
-package com.duffj.algorithms.misc;
+package com.dawngerpony.algorithms.misc;
 
 /**
  * FIFO queue implementation using a single linked list.

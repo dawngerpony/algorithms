@@ -5,4 +5,4 @@
  * @author dafydd
  *
  */
-package com.duffj.algorithms.sort;
+package com.dawngerpony.algorithms.sort;

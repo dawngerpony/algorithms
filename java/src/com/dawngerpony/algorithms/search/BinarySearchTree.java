@@ -1,10 +1,10 @@
-package com.duffj.algorithms.search;
+package com.dawngerpony.algorithms.search;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import com.duffj.algorithms.misc.Queue;
+import com.dawngerpony.algorithms.misc.Queue;
 
 /**
  * Implementation of a binary search tree.

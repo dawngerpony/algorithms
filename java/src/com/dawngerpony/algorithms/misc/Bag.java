@@ -1,4 +1,4 @@
-package com.duffj.algorithms.misc;
+package com.dawngerpony.algorithms.misc;
 
 import java.util.Iterator;
 import java.util.List;

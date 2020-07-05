@@ -1,4 +1,4 @@
-package com.duffj.algorithms.misc;
+package com.dawngerpony.algorithms.misc;
 
 public class Banana {
 	public Object value;
