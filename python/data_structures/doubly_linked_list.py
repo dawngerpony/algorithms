@@ -1,16 +1,29 @@
-# DoublyLinkedList.py
+""" An implementation of a doubly linked list. """
+
 
 class Node:
-    item = None
-    next = None
-    prev = None
+    """ A node in the list. """
 
-    def __init__(self, item):
-        self.item = item
+    def __init__(self, item, next_node=None, prev_node=None):
+        self._item = item
+        self._next = next_node
+        self._prev = prev_node
 
-    def link(self, next):
-        self.next = next
-        next.prev = self
+    def link(self, next_node):
+        """ Link the next node to the current node. """
+        self._next = next_node
+        next_node.link(self)
+
+    def next(self):
+        """ Get the next node. """
+        return self._next
+
+    def prev(self):
+        """ Get the previous node. """
+        return self._prev
+
+    def __str__(self):
+        return str(self._item)
 
 
 if __name__ == "__main__":
@@ -22,11 +35,11 @@ if __name__ == "__main__":
     node2.link(node3)
 
     node = node1
-    while (node != None):
-        print(node.item)
-        node = node.next
+    while node is not None:
+        print(node)
+        node = node.next()
 
     node = node3
-    while (node != None):
-        print(node.item)
-        node = node.prev
+    while node is not None:
+        print(node)
+        node = node.prev()
