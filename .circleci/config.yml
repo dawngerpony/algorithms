@@ -4,7 +4,7 @@ orbs:
   python: circleci/python@0.2.1
 
 jobs:
-  build-and-test:
+  python-build-and-test:
     executor: python/default
     steps:
       - checkout
@@ -16,6 +16,10 @@ jobs:
           name: Install dependencies
           working_directory: ./python
       - run:
+          command: pylint data_structures tests
+          name: Lint
+          working_directory: ./python
+      - run:
           command: pipenv run pytest
           name: Test
           working_directory: ./python
@@ -23,4 +27,4 @@ jobs:
 workflows:
   main:
     jobs:
-      - build-and-test
+      - python-build-and-test
