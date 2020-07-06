@@ -8,17 +8,17 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - python/load-cache
       - run:
           command: pip install pipenv
           name: Install pipenv
       - run:
-          command: cd python; pipenv install
+          command: pipenv install --dev
           name: Install dependencies
-      - python/save-cache
+          working_directory: ./python
       - run:
-          command: cd python; pipenv run pytest
+          command: pipenv run pytest
           name: Test
+          working_directory: ./python
 
 workflows:
   main:
