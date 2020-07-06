@@ -1,6 +1,5 @@
 """ Singly linked list. """
 
-
 class Node:
     """ A node in the list. """
 
