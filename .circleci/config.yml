@@ -11,16 +11,14 @@ jobs:
       - python/load-cache
       - run:
           command: pip install pipenv
-          name: install pipenv
+          name: Install pipenv
       - run:
-          command: pipenv install
-          working_directory: ./python
-          name: install dependencies
+          command: cd python; pipenv install
+          name: Install dependencies
       - python/save-cache
       - run:
-          command: pipenv run pytest
+          command: cd python; pipenv run pytest
           name: Test
-          working_directory: ./python
 
 workflows:
   main:
