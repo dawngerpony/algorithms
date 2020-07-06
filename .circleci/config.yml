@@ -16,7 +16,7 @@ jobs:
           name: Install dependencies
           working_directory: ./python
       - run:
-          command: pylint data_structures tests
+          command: pipenv run pylint data_structures tests
           name: Lint
           working_directory: ./python
       - run:
