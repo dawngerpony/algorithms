@@ -3,6 +3,7 @@ from data_structures.linked_lists import SinglyLinkedList
 
 
 class TestSinglyLinkedList:
+    """ Tests for singly linked list. """
 
     def test_initial_list(self):
         """ Singly linked list: test that a single node is created successfully. """
