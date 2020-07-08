@@ -3,7 +3,7 @@ package com.dawngerpony.algorithms.sort;
 /**
  * Selection sort implementation on an array of Items.
  * 
- * @author dafydd
+ * @author dawngerpony
  *
  * @param <Item>
  * @param <T>

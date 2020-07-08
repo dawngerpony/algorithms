@@ -3,7 +3,7 @@ package com.dawngerpony.algorithms.misc;
 /**
  * Implementation of a stack using arrays.
  * 
- * @author dafydd
+ * @author dawngerpony
  *
  * @param <Item>
  */

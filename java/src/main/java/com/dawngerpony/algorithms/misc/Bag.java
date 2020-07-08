@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * Implementation of an iterable bag data structure
  * using an ArrayList (cheating a bit, I know).
  * 
- * @author dafydd
+ * @author dawngerpony
  *
  * @param <Item>
  */
