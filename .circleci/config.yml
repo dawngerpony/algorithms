@@ -29,4 +29,5 @@ workflows:
   main:
     jobs:
       - python-build-and-test
-      - gradle/test
+      - gradle/test:
+          app_src_directory: java
