@@ -31,3 +31,5 @@ workflows:
       - python-build-and-test
       - gradle/test:
           app_src_directory: java
+          test_results_path: java/build/test-results
+          reports_path: java/build/reports
