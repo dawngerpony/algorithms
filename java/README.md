@@ -4,3 +4,4 @@
 
     brew install gradle
     gradle wrapper
+    gradle init
