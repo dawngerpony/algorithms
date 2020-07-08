@@ -4,7 +4,7 @@
 package com.dawngerpony.algorithms.search;
 
 /**
- * @author dafydd
+ * @author dawngerpony
  *
  */
 public class DepthFirstSearch {

@@ -9,7 +9,7 @@ import com.dawngerpony.algorithms.misc.Queue;
 /**
  * Implementation of a binary search tree.
  * 
- * @author dafydd
+ * @author dawngerpony
  *
  * @param <Key>
  * @param <Value>

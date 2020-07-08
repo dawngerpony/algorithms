@@ -3,7 +3,7 @@ package com.dawngerpony.algorithms.misc;
 /**
  * FIFO queue implementation using a single linked list.
  * 
- * @author dafydd
+ * @author dawngerpony
  *
  * @param <Item>
  */
@@ -15,7 +15,7 @@ public class Queue<Item> {
 	/**
 	 * Singly linked list.
 	 * 
-	 * @author dafydd
+	 * @author dawngerpony
 	 *
 	 */
 	private class Node {

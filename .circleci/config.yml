@@ -2,6 +2,7 @@ version: 2.1
 
 orbs:
   python: circleci/python@0.2.1
+  gradle: circleci/gradle@2.1.0
 
 jobs:
   python-build-and-test:
@@ -28,3 +29,4 @@ workflows:
   main:
     jobs:
       - python-build-and-test
+      - gradle/test
