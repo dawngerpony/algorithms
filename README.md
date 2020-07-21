@@ -14,3 +14,9 @@ Run the following command to generate a pictorial graph PS image. which you can 
     dot -Tps graph.dot -o graph.ps
     
 You'll need to install GraphViz first though.
+
+## Running Python tests
+
+    cd algorithms/python
+    pylint data_structures
+    pytest
